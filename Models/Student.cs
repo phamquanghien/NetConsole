@@ -5,6 +5,7 @@ namespace NetConsole.Models
         public string StudentID { get; set; }
         public void NhapThongTin()
         {
+            PersonID = "PS001";
             base.NhapThongTin();
             Console.WriteLine("StudentID = ");
             StudentID = Console.ReadLine();

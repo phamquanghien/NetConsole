@@ -1,6 +1,13 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-//tao doi tuong tu clas Student
+﻿using System.Collections;
 using NetConsole.Models;
-Student std = new Student();
-std.NhapThongTin();
-std.HienThi();
+ArrayList psList = new ArrayList();
+for(int i = 0; i < 2; i++)
+{
+    Person ps = new Person();
+    ps.NhapThongTin();
+    psList.Add(ps);
+}
+foreach(Person a in psList)
+{
+    Console.WriteLine(a.PersonID + "-" + a.FullName);
+}
